@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+}
+
+img:hover{
+cursor: pointer;
+
+}
+nav{
+    margin: 20px;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li{
+    /* list style type:none will remove the bullets */
+    list-style-type: none;
+    font-size: 20px;
+}
+/* Now styling the image whose alt was Menu */
+img[alt="Menu"]{
+    width: 20px;
+    display: none;
+}
+.Home-List{
+    padding: 5px 10px;
+    background-color: rgb(100, 100, 224);
+    border-radius: 15px;
+
+}
+.intro{
+    max-width: 100vw;
+    margin:20px;
+    display: flex;
+    /* If we give flex direction column then it wont make left and right sections */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+}
+.Intro-Line1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    font-size: 30px;
+}
+.Intor-Line2{
+    display: flex;
+/* If we give it column wise then devloper will shift to right side */
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
+.Intor-Line2 h1{
+    font-size: 60px;
+}
+.Intor-Line2 h2{
+    font-size: 35px;
+    color: rgb(197, 197, 89);
+}
+.Projectsection{
+    margin-top: 70px;
+    display: flex;
+    /* If we give here flex direction then it will divide in two sections left and right */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Projectsection div h1{
+    font-size: 40px;
+}
+.Horizontal-Divide{
+    height: 10px;
+    /* Width is the length  */
+    width: 135px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+img[alt="Hello"]{
+    height: 45px;
+}
+img[alt="PC-Image"]{
+    width:30vw;
+}
+img[alt="Prject-image"]{
+    width: 20vw;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Contact{
+    margin:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+.Contact h1{
+    font-side:40px;
+}
+.Horizontal-Divide-contatct{
+    height: 10px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.Socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+img[alt="social"]{
+    width:30px;
+}
+@media(max-width:576px){
+    nav ul{
+        display: none;
+    }
+    img[alt="Menu"]{
+        display:flex;
+        flex-direction: column;
+    }
+    img[alt="PC-Image"]{
+        width:60vw;
+    }
+    .Intro-Line1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        font-size: 20px;
+    }
+    .Intro-Line1 h1{
+        font-side:40px;
+    }
+    .Intor-Line2 h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .project-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap:20px;
+        column-gap: 20px;
+
+    }
+    img[alt="Prject-image"]{
+        width:55vw;
+    }
+    .Projectsection div h1{
+        font-size: 35px;
+    }
+    .Contact div h1{
+        font-size: 35px;
+    }
+    .Horizontal-Divide-contatct{
+        height: 10px;
+        width: 180px;
+        background-color: blue;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+}
+
